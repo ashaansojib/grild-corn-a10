@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.my-container{
+    @apply lg:w-[1050px] container mx-auto;
+}
+.default{
+    @apply py-2 px-4 text-[#848A87] font-medium;
+}
+.active{
+    @apply bg-[#8DC63F] py-2 px-4 text-white rounded-lg font-medium;
+}
+/* details page */
+.detail-container{
+    @apply lg:h-[400px] bg-cover object-cover w-full bg-[url(https://149410494.v2.pressablecdn.com/wp-content/uploads/2020/03/meat-burger-with-salad-cheese-tomato-and-ketchup-KRH2A48-1200x600.jpg)]
+}
+.detail-bg{
+    @apply bg-sky-500 text-white bg-opacity-40 w-full h-full;
+}
+/* card hover css */
+.card:hover img {
+    transform: scale(1.1);
+}
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+/* recepie category style */
+.category-image:hover img{
+    @apply hover:rotate-45 hover:transition-all hover:duration-500 transform rotate-0 transition-all duration-1000
+}
+.category-image{
+    @apply w-[200px] h-[200px] rounded-full overflow-hidden;
+}
+/* footer css */
+.footer-links{
+    @apply border-r px-2 hover:text-orange-500 transition duration-500 last:border-none;
+}
+
+/* today */
+.today{
+    font-family: 'Noto Serif', serif;
+}
+.count{
+    @apply flex my-4 items-center md:flex-col;
+}
